@@ -6,7 +6,7 @@ var app = express();
 app.use(morgan('combined'));
 
 var articles=   {
-     'article-one':{
+     'article-two':{
             title: 'Article 1 - Guru',
             heading: 'MY FIRST ARTICLE ABOUT ME',
             date:'Jan 16, 2015',
@@ -17,13 +17,13 @@ var articles=   {
     We are the global and leading Accredited Training Organization (ATO) for ITIL, PRINCE2, Lean Six Sigma, Agile Scrum Master, ISO 20000/27000, CSM, MSP, PMP, Cloud Computing, etc. !!!
     ITIL® (IT Infrastructure Library®) is the most widely established approach to IT Service Management. It provides a set of best practices for identifying, planning, delivering and supporting IT services to businesses and can be applied to nearly all organizations.</p>`
             },
-     'article-two':{
+     'article-three':{
             title: 'Article 2 - Guru',
             heading: 'MY SECOND ARTICLE ABOUT MY JOB',
             date:'August 15, 2015',
             content:`Hi! Welcome to my Second Article. I am Gurumoorthy. working on DXC Technology. Healthways Account.`
             },
-     'article-three':{
+     'article-four':{
             title: 'Article 3 - Guru',
             heading: 'MY THIRD ARTICLE ABOUT LIFE',
             date:'Nov 16,2016',
