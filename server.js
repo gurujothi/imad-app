@@ -32,7 +32,8 @@ var articles= {
         'article-three':{
         title: 'Article 3 - Guru',
         heading: 'MY THIRD ARTICLE ABOUT LIFE',
-        date:'Nov<t>Hi! Welcome to my Third Article. I am Gurumoorthy. A Searcher of science. </t>'
+        date:'Nov 16,2016'
+        content:'<t>Hi! Welcome to my Third Article. I am Gurumoorthy. A Searcher of science. </t>'
         }
     
 };
