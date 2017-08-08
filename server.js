@@ -11,7 +11,7 @@ app.get('/', function (req, res) {
 
 var articles= {
         'article-one':{
-        title: 'Article 1 - Guru',
+        //title: 'Article 1 - Guru',
         heading: 'MY FIRST ARTICLE ABOUT ME',
         date:'Jan 16, 2015',
         content:` <p>     Hi! Welcome to my First Article. I am Gurumoorthy. Completed B.E. </p>
@@ -22,13 +22,13 @@ We are the global and leading Accredited Training Organization (ATO) for ITIL, P
 ITIL® (IT Infrastructure Library®) is the most widely established approach to IT Service Management. It provides a set of best practices for identifying, planning, delivering and supporting IT services to businesses and can be applied to nearly all organizations.</p>`
         },
         'article-two':{
-        title: 'Article 2 - Guru',
+        //title: 'Article 2 - Guru',
         heading: 'MY SECOND ARTICLE ABOUT MY JOB',
         date:'August 15, 2015',
         content:`Hi! Welcome to my Second Article. I am Gurumoorthy. working on DXC Technology. Healthways Account.`
         },
         'article-three':{
-        title: 'Article 3 - Guru',
+        //title: 'Article 3 - Guru',
         heading: 'MY THIRD ARTICLE ABOUT LIFE',
         date:'Nov 16,2016',
         content:`Hi! Welcome to my Third Article. I am Gurumoorthy. A Searcher of science.`
@@ -38,7 +38,7 @@ ITIL® (IT Infrastructure Library®) is the most widely established approach to IT
 
 function createTemplate (data)
 {
-var title = data.title;
+//var title = data.title;
 var heading = data.heading;
 var date = data.date;
 var content = data.content;
@@ -46,9 +46,9 @@ var content = data.content;
 var htmlTemplate = `
 <html>
 <head>
-    <title>
-        ${title}
-    </title>
+   <title>
+        
+    </title
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/ui/style.css" rel="stylesheet" />
 </head>
