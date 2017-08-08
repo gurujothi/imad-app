@@ -14,14 +14,12 @@ var articles= {
         title: 'Article 1 - Guru',
         heading: 'MY FIRST ARTICLE ABOUT ME',
         date:'Jan 16, 2015',
-        content:`
-                    <p>     Hi! Welcome to my First Article. I am Gurumoorthy. Completed B.E. </p>
-                            <p>Greetings from NovelVista learning Solutions! Thanks for showing interest in NovelVista Learning Solutions!!
-                It was nice to talk to you today. Please find below details for ITIL Foundation Certification.
-                 
-                We are the global and leading Accredited Training Organization (ATO) for ITIL, PRINCE2, Lean Six Sigma, Agile Scrum Master, ISO 20000/27000, CSM, MSP, PMP, Cloud Computing, etc. !!!
-                ITIL® (IT Infrastructure Library®) is the most widely established approach to IT Service Management. It provides a set of best practices for identifying, planning, delivering and supporting IT services to businesses and can be applied to nearly all organizations.</p>
-                  `
+        content:` <p>     Hi! Welcome to my First Article. I am Gurumoorthy. Completed B.E. </p>
+            <p>Greetings from NovelVista learning Solutions! Thanks for showing interest in NovelVista Learning Solutions!!
+It was nice to talk to you today. Please find below details for ITIL Foundation Certification.
+ 
+We are the global and leading Accredited Training Organization (ATO) for ITIL, PRINCE2, Lean Six Sigma, Agile Scrum Master, ISO 20000/27000, CSM, MSP, PMP, Cloud Computing, etc. !!!
+ITIL® (IT Infrastructure Library®) is the most widely established approach to IT Service Management. It provides a set of best practices for identifying, planning, delivering and supporting IT services to businesses and can be applied to nearly all organizations.</p>`
         },
         'article-two':{
         title: 'Article 2 - Guru',
