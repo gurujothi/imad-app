@@ -86,7 +86,7 @@ app.get('/:articleName', function (req, res) {
   res.send(createTemplate(articles[articleName]));
 });
 app.get('/ui/main.js', function (req, res) {
-  alert('This is SERVER FILE');
+  res.send('This is server file');
 });
 
 app.get('/ui/style.css', function (req, res) {
