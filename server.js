@@ -83,7 +83,7 @@ app.get('/', function (req, res) {
 var counter =0;
 app.get('/counter', function (req,res) {
    counter = counter + 1;
-   res.send(counter.ToString); 
+   res.send(counter); 
 });
 app.get('/:articleName', function (req, res) {
   var articleName = req.params.articleName;
