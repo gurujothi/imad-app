@@ -22,7 +22,7 @@ button.onclick = function() {
     
 };
 
-
+var nameInput = document.getElementById('name');
 
 var submit = document.getElementById('submit_btn');
 submit.onclick = function() {
@@ -33,8 +33,6 @@ submit.onclick = function() {
         if(request.readyState === XMLHttpRequest.DONE){
             
             if(request.status === 200){
-                var nameInput = document.getElementById('name');
-                var Name = nameInput.value;
                 var names = request.responseText;
                 names = JSON.parse(names);
                 var list = '';
@@ -49,6 +47,7 @@ submit.onclick = function() {
             }
         }
     };
+    var Name = nameInput.value;
     request.open('GET','http://gurumoorthy1994.imad.hasura-app.io/submit-name?name=' + Name, true);
     request.send(null);
     
