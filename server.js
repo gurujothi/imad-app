@@ -89,6 +89,13 @@ app.get('/:articleName', function (req, res) {
   res.send(createTemplate(articles[articleName]));
 });
 
+var names=[];
+app.get('/submit-name/:name', function (req, res) {
+    var name = req.params.name;
+    names.push(name);
+    res.send(names);
+});
+
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
