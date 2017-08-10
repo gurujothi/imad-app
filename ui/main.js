@@ -35,7 +35,7 @@ submit.onclick = function() {
         
     }
     
-    var ui = document.getElementById(namelist);
+    var ui = document.getElementById('namelist');
     ui.InnerHTML = list;
     
 }
