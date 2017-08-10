@@ -30,8 +30,7 @@ var articles=   {
             content:`Hi! Welcome to my Third Article. I am Gurumoorthy. A Searcher of science.`
             }
 };
-function createTemplate (data)
-{
+function createTemplate (data){
 var title = data.title;
 var heading = data.heading;
 var date = data.date;
@@ -89,6 +88,7 @@ app.get('/:articleName', function (req, res) {
   var articleName = req.params.articleName;
   res.send(createTemplate(articles[articleName]));
 });
+
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
