@@ -102,17 +102,35 @@ app.get('/submit-name', function (req, res) {
     res.send(JSON.stringify(names));
 });
 
-var namesArticle=[];
-app.get('/articleComment', function (req, res) {
+var namesArticle1=[];
+app.get('/article1Comment', function (req, res) {
     
     var name1 = req.query.name;
-    namesArticle.push(name1);
-    res.send(JSON.stringify(namesArticle));
+    namesArticle1.push(name1);
+    res.send(JSON.stringify(namesArticle1));
 });
+
+var namesArticle2=[];
+app.get('/article2Comment', function (req, res) {
+    
+    var name2 = req.query.name;
+    namesArticle2.push(name1);
+    res.send(JSON.stringify(namesArticle2));
+});
+
+var namesArticle3=[];
+app.get('/article3Comment', function (req, res) {
+    
+    var name3 = req.query.name;
+    namesArticle3.push(name1);
+    res.send(JSON.stringify(namesArticle3));
+});
+
 
 app.get('/:articleName', function (req, res) {
   var articleName = req.params.articleName;
   res.send(createTemplate(articles[articleName]));
+  
 });
 
 
