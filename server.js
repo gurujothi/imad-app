@@ -102,8 +102,9 @@ app.get('/', function (req, res) {
 });
 
 var namesArticle1=[];
-app.get('/articlecom1', function (req, res) {
+app.get('/:article1comment', function (req, res) {
     
+    var article1comment = req.params.article1Comment;
     var name1 = req.query.content;
     namesArticle1.push(name1);
     res.send(JSON.stringify(namesArticle1));
