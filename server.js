@@ -66,9 +66,9 @@ var htmlTemplate = `
         </div>
     
         <div>
-        <textarea name="comments" id="comments" style="font-family:sans-serif;font-size:1.2em;">
-        Hey... say something!
-        </textarea>
+        <input type="text" id="comments" placeholder="Say Something about article">
+        
+        </input>
         </div>
         <input type="submit" id = "submitcontent" value="Submit">
         
