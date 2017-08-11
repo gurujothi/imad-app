@@ -71,7 +71,7 @@ contsubmit.onclick = function() {
                     list += '<li>' + names[i] + '</li>';
                 }
                 
-                var ui = document.getElementById('namelist');
+                var ui = document.getElementById('nameList');
                 ui.innerHTML = list;
                             
                 
