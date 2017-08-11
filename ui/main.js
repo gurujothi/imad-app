@@ -53,30 +53,3 @@ submit.onclick = function() {
     
     
 };
-
-var conInput = document.getElementById('comments');
-var contsubmit = document.getElementById('submitcontent');
-
-contsubmit.onclick = function() {
-    var request = new XMLHttpRequest();
-    
-    request.onreadystatechange = function() {
-        
-        if(request.readyState === XMLHttpRequest.DONE){
-            
-            if(request.status === 200){
-
-                var ui = document.getElementById('nameList');
-                var list = '<li>'+guru+'</li>';
-                ui.innerHTML = list;
-                            
-                
-            }
-        }
-    };
-    var Name = nameInput.value;
-    request.open('GET','http://gurumoorthy1994.imad.hasura-app.io/submit-name?name=' + Name, true);
-    request.send(null);
-    
-    
-};
