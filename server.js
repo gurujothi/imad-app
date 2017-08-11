@@ -102,12 +102,13 @@ app.get('/', function (req, res) {
 });
 
 var namesArticle1=[];
-app.get('/article1Comment', function (req, res) {
+app.get('/:article1Comment', function (req, res) {
     
     var name1 = req.query.content;
     namesArticle1.push(name1);
     res.send(JSON.stringify(namesArticle1));
 });
+
 
 var counter =0;
 app.get('/counter', function (req,res) {
