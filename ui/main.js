@@ -24,7 +24,9 @@ submitbtn.onclick = function() {
         }
     };
     var Name = contentInput.value;
+    
     request.open('GET','http://gurumoorthy1994.imad.hasura-app.io/article1Comment?content=' + Name, true);
+    
     request.send(null);
     
     
