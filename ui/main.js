@@ -53,5 +53,3 @@ submit.onclick = function() {
     
     
 };
-
-
