@@ -85,7 +85,7 @@ var htmlTemplate = `
          
     </div> 
         
-    <script type="text/javascript" src="/ui/mainarticle.js">
+    <script type="text/javascript" src="imad-app/ui/mainarticle.js">
     </script> 
     </body>
 
