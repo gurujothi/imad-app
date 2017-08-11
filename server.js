@@ -76,13 +76,16 @@ var htmlTemplate = `
         </div>
             <div>
             <ul id="nameList">
-                Comments Section        
+                Comments Section 
+                <li>good</li>
+                <li>bad</li>
             </ul>
             </div>
          
     </div> 
         
-        
+    <script type="text/javascript" src="/ui/main.js">
+    </script> 
     </body>
 
 </html>
