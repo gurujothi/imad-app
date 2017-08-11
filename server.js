@@ -70,7 +70,11 @@ var htmlTemplate = `
         Hey... say something!
         </textarea>
         </div>
-        <input type="submit" value="Submit">
+        <input type="submit" id = "submitcontent" value="Submit">
+        
+        <ul id="namelist">
+                    
+        </ul>
          
     </div> 
         
