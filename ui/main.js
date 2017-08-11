@@ -56,6 +56,7 @@ submit.onclick = function() {
 
 var conInput = document.getElementById('comments');
 var contsubmit = document.getElementById('submitcontent');
+
 contsubmit.onclick = function() {
     var request = new XMLHttpRequest();
     
@@ -64,22 +65,16 @@ contsubmit.onclick = function() {
         if(request.readyState === XMLHttpRequest.DONE){
             
             if(request.status === 200){
-                var names = request.responseText;
-                names = JSON.parse(names);
-                var list = '';
-                for (var i = 0; i<names.length; i++) {
-                    list += '<li>' + names[i] + '</li>';
-                }
-                
+
                 var ui = document.getElementById('nameList');
-                ui.innerHTML = list;
+                ui.innerHTML = {'<li>guru</li>','<li>mongo</li>';
                             
                 
             }
         }
     };
-    var Name1 = conInput.value;
-    request.open('GET','http://gurumoorthy1994.imad.hasura-app.io/article1Comment?content=' + Name1, true);
+    var Name = nameInput.value;
+    request.open('GET','http://gurumoorthy1994.imad.hasura-app.io/submit-name?name=' + Name, true);
     request.send(null);
     
     
