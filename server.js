@@ -92,6 +92,15 @@ return htmlTemplate;
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
+
+var namesArticle1=[];
+app.get('/article1Comment', function (req, res) {
+    
+    var name1 = req.query.name;
+    namesArticle1.push(name1);
+    res.send(JSON.stringify(namesArticle1));
+});
+
 var counter =0;
 app.get('/counter', function (req,res) {
    counter = counter + 1;
@@ -106,13 +115,7 @@ app.get('/submit-name', function (req, res) {
     res.send(JSON.stringify(names));
 });
 
-var namesArticle1=[];
-app.get('/article1Comment', function (req, res) {
-    
-    var name1 = req.query.name;
-    namesArticle1.push(name1);
-    res.send(JSON.stringify(namesArticle1));
-});
+
 
 var namesArticle2=[];
 app.get('/article2Comment', function (req, res) {
