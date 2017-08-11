@@ -72,7 +72,7 @@ var htmlTemplate = `
         </div>
         <input type="submit" id = "submitcontent" value="Submit">
         
-        <ul id="namelist">
+        <ul id="nameList">
                     
         </ul>
          
