@@ -102,7 +102,7 @@ app.get('/', function (req, res) {
 });
 
 var namesArticle1=[];
-app.get('/:article1Comment', function (req, res) {
+app.get('/articlecom1', function (req, res) {
     
     var name1 = req.query.content;
     namesArticle1.push(name1);
