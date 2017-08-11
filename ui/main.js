@@ -67,7 +67,7 @@ contsubmit.onclick = function() {
             if(request.status === 200){
 
                 var ui = document.getElementById('nameList');
-                ui.innerHTML = {'<li>guru</li>','<li>mongo</li>';
+                ui.innerHTML = {'<li>guru</li>','<li>mongo</li>'};
                             
                 
             }
