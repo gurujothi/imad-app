@@ -114,7 +114,7 @@ var namesArticle2=[];
 app.get('/article2Comment', function (req, res) {
     
     var name2 = req.query.name;
-    namesArticle2.push(name1);
+    namesArticle2.push(name2);
     res.send(JSON.stringify(namesArticle2));
 });
 
@@ -122,7 +122,7 @@ var namesArticle3=[];
 app.get('/article3Comment', function (req, res) {
     
     var name3 = req.query.name;
-    namesArticle3.push(name1);
+    namesArticle3.push(name3);
     res.send(JSON.stringify(namesArticle3));
 });
 
