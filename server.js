@@ -74,17 +74,18 @@ var htmlTemplate = `
         <input type="submit" id = "submitcontent" value="Submit">
         <br>
         </div>
+        <br>
+        Comments Section
             <div>
             <ul id="nameList">
-                Comments Section 
-                <li>good</li>
-                <li>bad</li>
+                 
+                
             </ul>
             </div>
          
     </div> 
         
-    <script type="text/javascript" src="/ui/main.js">
+    <script type="text/javascript" src="/ui/mainarticle.js">
     </script> 
     </body>
 
