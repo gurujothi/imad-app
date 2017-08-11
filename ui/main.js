@@ -79,7 +79,7 @@ contsubmit.onclick = function() {
         }
     };
     var Name1 = conInput.value;
-    request.open('GET','http://gurumoorthy1994.imad.hasura-app.io/article1Comment?content=' + Name, true);
+    request.open('GET','http://gurumoorthy1994.imad.hasura-app.io/article1Comment?content=' + Name1, true);
     request.send(null);
     
     
