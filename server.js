@@ -64,17 +64,21 @@ var htmlTemplate = `
         <div>
             ${content}
         </div>
-    
+        
+        <br>
         <div>
         <input type="text" id="comments" placeholder="Say Something about article">
         
         </input>
-        </div>
-        <input type="submit" id = "submitcontent" value="Submit">
         
-        <ul id="nameList">
-                    
-        </ul>
+        <input type="submit" id = "submitcontent" value="Submit">
+        <br>
+        </div>
+            <div>
+            <ul id="nameList">
+                        
+            </ul>
+            </div>
          
     </div> 
         
