@@ -143,13 +143,13 @@ app.post('/login', function(req,res){
    var username = req.body.username;
    var password = req.body.password;
    
-   pool.query(`SELECT * FROM "user" WHERE username = $1`,[username], function(err,result){
+   pool.query(`SELECT * FROM "user" WHERE username= $1`,[username], function(err,result){
      if(err){
-         res.status(500).send('hi');
+         res.status(500).send(err.toString());
             } 
      else{
          if(results.rows.length === 0){
-             res.send(403).send("Invalid User or Password")
+             res.status(403).send("Invalid User or Password")
          }
          else{
              var dbString = results.password[0];
@@ -159,7 +159,7 @@ app.post('/login', function(req,res){
                  res.send("Credentials are Correct. Welcome")
              }
              else{
-          res.send(403).send("User created successfully" +username);   
+          res.status(403).send("User created successfully" +username);   
                 }
              
          }
