@@ -113,12 +113,14 @@ app.get('/', function (req, res) {
 
 function hashFunction(password,salt){
     var hashed = crypto.pbkdf2Sync(password, 'salt', 10000, 512, 'sha512');
-    return hashed.toString('hex');
+    return ["pbkdf2","10000",salt,hashed.toString('hex')].join('$');
 }
 app.get('/hash/:password', function (req, res) {
   var hashedString = hashFunction(req.params.password,'This_is_some_random_string')
   res.send(hashedString);
 });
+
+
 
 var pool = new Pool(config);
 app.get('/test-db', function (req, res) {
