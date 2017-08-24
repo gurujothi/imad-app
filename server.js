@@ -149,7 +149,7 @@ app.post('/login', function(req,res){
             } 
      else{
          if(result.rows.length === 0){
-             res.send(403).send("Invalid User or Password")
+             res.send(403).send("Invalid User or Password");
          }
          else{
              var dbString = result.rows[0].password;
