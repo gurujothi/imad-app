@@ -155,7 +155,7 @@ app.post('/login', function(req,res){
              var dbString = result.rows[0].password;
              var salt = dbString.split('$')[2];
              var hashedPassword = hashFunction(password,salt);
-             if(hashedPassword === dbString){
+             if(ha shedPassword === dbString){
                  res.send("Credentials are Correct. Welcome");
              }
              else{
