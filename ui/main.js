@@ -1,5 +1,5 @@
-var nameInput = document.getElementById('username');
-var password = document.getElementById('password');
+var nameInput = document.getElementById('username').value;
+var password = document.getElementById('password').value;
 
 var submit = document.getElementById('submit_btn');
 submit.onclick = function() {
@@ -27,7 +27,7 @@ submit.onclick = function() {
     console.log(password);
     request.open('POST','http://gurumoorthy1994.imad.hasura-app.io/login', true);
     request.setRequestHeader('Content-Typ', 'application/json')
-    request.send(JSON.stringify({username: nameInput.value, password: password.value}));
+    request.send(JSON.stringify({username: nameInput, password: password}));
     
     
 };
