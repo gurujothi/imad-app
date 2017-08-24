@@ -159,7 +159,7 @@ app.post('/login', function(req,res){
                  res.send("Credentials are Correct. Welcome");
              }
              else{
-          res.send(403).send("Sucessfully LOGGED IN User: " +username);   
+          res.send(403).send("Wrong Password for User: " +username);   
                 }
              
          }
