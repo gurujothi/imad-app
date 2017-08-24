@@ -26,7 +26,7 @@ submit.onclick = function() {
     console.log(nameInput);
     console.log(password);
     request.open('POST','http://gurumoorthy1994.imad.hasura-app.io/login', true);
-    request.setRequestHeader('Content-Typ', 'application/json')
+    request.setRequestHeader('Content-Type', 'application/json')
     request.send(JSON.stringify({username: nameInput, password: password}));
     
     
