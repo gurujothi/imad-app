@@ -1,5 +1,3 @@
-var nameInput = document.getElementById('username').value;
-var password = document.getElementById('password').value;
 
 var submit = document.getElementById('submit_btn');
 submit.onclick = function() {
@@ -23,6 +21,8 @@ submit.onclick = function() {
         
     };
     
+    var nameInput = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
     console.log(nameInput);
     console.log(password);
     request.open('POST','http://gurumoorthy1994.imad.hasura-app.io/login', true);
