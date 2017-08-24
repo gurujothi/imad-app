@@ -148,11 +148,11 @@ app.post('/login', function(req,res){
          res.status(500).send(err.toString());
             } 
      else{
-         if(results.rows.length === 0){
+         if(result.rows.length === 0){
              res.send(403).send("Invalid User or Password")
          }
          else{
-             var dbString = results.password[0];
+             var dbString = result.rows[0].password;
              var salt = dbString.split('$')[2];
              var hashedPassword = hashFunction(password,salt);
              if(hashedPassword === dbString){
